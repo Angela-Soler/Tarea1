@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Tarea1.MainPage">
+
+    <VerticalStackLayout HorizontalOptions="Center">
+        
+        <Label Text="Numero 1:"></Label>
+        <Editor x:Name="TextEditor"
+                Placeholder="Ingrese Numero 1"
+                HeightRequest="100"></Editor>
+        <Label Text="Numero 2:"></Label>
+        <Editor x:Name="TextEditor2"
+         Placeholder="Ingrese Numero 2"
+         HeightRequest="100"
+         ></Editor>
+        <Grid ColumnDefinitions="200" ColumnSpacing="250" HorizontalOptions="Center" Padding="10">
+            <Button Text="Sumar"
+                Clicked="Button_Clicked"
+                    >
+            </Button>
+        </Grid>
+        <Grid ColumnDefinitions="200" ColumnSpacing="250" HorizontalOptions="Center" Padding="10">
+            <Button Text="Restar"
+                Clicked="Restar_Clicked">
+            </Button>
+        </Grid>
+        <Grid ColumnDefinitions="200" ColumnSpacing="250" HorizontalOptions="Center" Padding="10">
+            <Button Text="Multiplicar"
+                Clicked="Multiplicar_Clicked">
+            </Button>
+        </Grid>
+        <Grid ColumnDefinitions="200" ColumnSpacing="250" HorizontalOptions="Center" Padding="10">
+            <Button Text="Dividir"
+                    Clicked="Dividir_Clicked">
+            </Button>
+        </Grid>
+
+    </VerticalStackLayout>
+
+</ContentPage>
